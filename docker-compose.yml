@@ -1,0 +1,8 @@
+services:
+  streamlit:
+    build:
+      dockerfile: services/streamlit/Dockerfile
+      context: ./
+    ports:
+      - "127.0.0.1:8501:8501"
+      - "5005:5005/udp"
